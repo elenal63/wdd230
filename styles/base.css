@@ -89,7 +89,7 @@ img {
     
   }
 
-  main h2, p, li {
+  main h2, main p, main li {
       color: #84714F;
   }
 
@@ -101,4 +101,5 @@ img {
     color: beige;
 
   }
+
   
