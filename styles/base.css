@@ -110,7 +110,9 @@ img {
       margin: 5rem 4rem;
       border-radius:15px;
   }
-
+  main section ol {
+      text-align: left;
+  }
   main h2, main p, main li {
       color: #654206;
   }
