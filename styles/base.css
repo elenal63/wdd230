@@ -64,12 +64,37 @@ img {
       background-color: #345120;
       color: beige; 
       padding: 20px;
-      display: flex;
+      /* display: flex; */
+      display: none;
       flex-direction: column;
       width: 100%;
       text-align: center;
       font-size: 1.5rem;
   }
+
+  #menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color:#345120;
+	color: beige;
+}
+
+  #menu::before {
+	content: "≡";
+    /* color: beige;  */
+}
+
+#menu.show::before {
+	content: "X";
+    /* color: beige;  */
+}
+
+.show nav a {
+	display: block;
+}
 
   /* main {
     grid-column: 1 / 4;
@@ -124,6 +149,18 @@ img {
     background-color: #345120;
     color: beige;
 
+  }
+
+  ::marker { 
+	color: #558435;
+	font-size: 2rem;
+	font-variant: small-caps;
+  }
+
+  iframe {
+      width: 95%;
+      padding-left: 1rem;
+      padding-right: 1rem;
   }
 
   
