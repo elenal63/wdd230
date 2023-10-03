@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+body{
+    background-color: #F8F3DF;
+    font-family: 'Bitter', serif;}
+
+p {
+    color: #543034;
+}
+
+.accent1 {
+    background-color: #0C6279;
+    color: #B8E6F3;
+}
+
+.accent2 {
+    color: #F2B443;
+}
+
+.heading1 {
+    color: #0C6279;
+}
+
+.heading2 {
+    color: #DE871D;
+}
+
+img {
+    width: 50%;
+}
