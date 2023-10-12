@@ -10,11 +10,13 @@
         flex-direction: row;
         text-align: center;
         justify-items: center;
+        display: flex;
+        flex-direction: row;
     }
 
-    nav a {
+    /* nav a {
         display: flex;
-    }
+    } */
 
     main section{
         margin: 4rem 3rem;

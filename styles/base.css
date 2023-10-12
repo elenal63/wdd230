@@ -54,7 +54,7 @@ img {
     padding: 2rem;
     /* grid-column: 1 / 4; */
     background-color: #345120;
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -64,8 +64,8 @@ img {
       background-color: #345120;
       color: beige; 
       padding: 20px;
-      /* display: flex; */
-      display: none;
+      display: flex;
+      /* display: none; */
       flex-direction: column;
       width: 100%;
       text-align: center;
@@ -82,7 +82,7 @@ img {
 	color: beige;
 }
 
-  #menu::before {
+#menu::before {
 	content: "≡";
     /* color: beige;  */
 }
@@ -92,7 +92,7 @@ img {
     /* color: beige;  */
 }
 
-.show nav a {
+nav.show {
 	display: block;
 }
 
