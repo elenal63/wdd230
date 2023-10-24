@@ -39,5 +39,8 @@
         padding: 2rem;
     }
 
-    
+    .hero h2{
+        position: absolute;
+        font-size: 2rem;
+    }
 }

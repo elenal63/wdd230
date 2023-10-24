@@ -16,12 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    
 
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Image of Elena Leon">
+        <img src="images/profile.webp" alt="Image of Elena Leon">
         <h1>Elena Leon</h1>
     </header>
     <a id="menu" href="#"></a>
@@ -33,6 +32,14 @@
         <a target="_blank" rel="noopener noreferrer" href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/53?lang=eng&id=p3-p5#p3">Scripture</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+              <source media="(max-width: 900px)" srcset="images/la_temple.webp">
+              <source media="(max-width: 1200px)" srcset="images/la_temple.webp">
+              <img src="images/la_temple.webp">
+            </picture>
+            <h2>Los Angeles Temple</h2>
+          </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
@@ -44,6 +51,7 @@
                 <li><a class="items" href="lesson03/chamber-site-plan.html">Chamber Site Plan</a></li>
                 <li><a class="items" href="lesson04/pseudo-classes.html">CSS Pseudo Classes</a></li>
                 <li><a class="items" href="lesson05/bom.html">BOM Favorite Chapters</a></li>
+                <li><a class="items" href="lesson07/lazy_load.html">Lazy Loading</a></li>
             </ol>
         </section>
         <section class="card">

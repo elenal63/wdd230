@@ -9,15 +9,85 @@
     <meta name="author" content="Elena Leon"/>
     <meta property="og:url" content="https://github.com/elenal63/wdd230"/>
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Elena Leon - WDD 230 - Web Frontend Development" />
-    <meta property="og:description" content="This webpage is a portal page for the work of Elena Leon. It is focused on WDD 230 - Web Frontend Development. It will provide links to current and past assignments I complete throughout the semester." />
-    <meta property="og:image" content="https://elenal63.github.io/wdd230/images/profile.jpg"/>
-    <link rel="icon" href="images/favicon2.ico">
+    <meta property="og:title" content="Star Hollow Chamber of Commerce" />
+    <meta property="og:description" content="This is a chamber of commerce site for the town Stars Hollow. It is focused on supporting Stars Hollow's local businesses and events. It will provide links to the directory of businesses, the discover page, and the join page." />
+    <meta property="og:image" content="https://elenal63.github.io/wdd230/images/town.jpeg"/>
+    <link rel="icon" href="images/stars_hollow_sign.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    
+    <header>
+        <p><img src="images/stars_hollow_sign.webp" alt="Stars Hollow Sign" height="160" width="160"></p>
+        <h1>Stars Hollow Chamber of Commerce</h1>        
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <div><button id='dark-mode'>DARK</button></div>
+    <main id="home-main">
+        <section id="hero" class="home-section">
+            <h2>Hero</h2>
+            <img src="images/town.jpeg" alt="town">
+            <button>Call to Action</button>
+        </section>
+        <section id="current-events" class="home-section">
+            <h2>Current Events</h2>
+            <img src="https://placehold.co/400x300" alt="events placeholder">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sequi eos, accusantium praesentium
+                officia alias dolores, consectetur, quibusdam corrupti ratione et ipsam maiores vitae nobis repellat
+                laboriosam quas saepe ut? Tenetur incidunt beatae reprehenderit, quae laborum voluptatibus natus
+                mollitia hic, itaque a autem earum libero unde veritatis quidem quia possimus.</p>
+        </section>
+        <section id="weather" class="home-section">
+            <h2>Weather</h2>
+            <img src="https://placehold.co/400x300" alt="weather placeholder">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum quam
+                rem deserunt placeat repellendus.</p>
+        </section>
+        <div id="spotlights" class="home-section">
+            <section id="spotlight-1" class="spotlight-card">
+                <h3>Spotlight 1</h3>
+                <img src="https://placehold.co/300x240" alt="spotlight 1 placeholder">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
+                    quam rem deserunt placeat repellendus.</p>
+            </section>
+            <section id="spotlight-2" class="spotlight-card">
+                <h3>Spotlight 2</h3>
+                <img src="https://placehold.co/300x240" alt="spotlight 2 placeholder">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
+                    quam rem deserunt placeat repellendus.</p>
+            </section>
+            <section id="spotlight-3" class="spotlight-card">
+                <h3>Spotlight 3</h3>
+                <img src="https://placehold.co/300x240" alt="spotlight 3 placeholder">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
+                    quam rem deserunt placeat repellendus.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer-logo">
+            <p><img src="images/teton-logo.webp" alt="Teton Idaho Logo" height="160" width="160"></p>
+        </div>
+        <div class="footer-contact">
+            <p>Teton Idaho Chamber of Commerce</p>
+            <p>123 Main Street, Teton, ID 83451</p>
+            <p><a href="#">info@tetonchamber.org</a></p>
+            <p>208-458-4444</p>
+        </div>
+        <hr>
+        <div class="footer-base">
+            <p>&copy;<span id="currentyear"></span> Quinn Briggs | Chamber Project WDD 230 | Last Modified: <span id="lastmodified"></span></p>
+        </div>        
+    </footer>
 </body>
 </html>
