@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+:root{
+    --text-color: #543034;
+    --background-color: #F8F3DF;
+    --hover-background-color: #DE871D;    
+    --hover-color: black;
+}
+
+body{
+    font-family: 'Bitter', serif;
+    background-color: #F8F3DF;
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button{
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header, footer, nav{
+    background-color: #DE871D;
+    color: #F8F3DF;
+}
+
+main{
+    background-color: var(--background-color);
+}
+
+/** Header styles **/
+
+header{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+#dark-mode{
+    position:absolute;
+    top: 1rem;
+    right: 2rem; 
+    background-color: var(--background-color);
+}
+
+header img{
+    flex: 1;
+}
+
+header h1{
+    flex: 2;
+    text-align: center;    
+}
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+/** Menu styles **/
+
+nav ul{
+    list-style: none;
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+nav ul li{
+    flex: 1;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: var(--hover-background-color);
+    color: var(--hover-color);
+}
+
+nav ul li a{
+    display: block;    
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+nav ul li a:hover{
+    background-color: var(--background-color);
+}
+
+/* main styles */
+#hero{
+    position: relative;
+}
+#hero img{
+    width: 100%;
+}
+
+#hero button{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border: 5px solid var(--hover-background-color);
+    border-radius: 10px;
+}
+
+#hero button:hover{
+    background-color: var(--hover-background-color)
+}
+
+
+#hero h2{
+    padding: 1rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    margin-block-start: 0em;
+}
+
+#hero h2::before{
+    content: "Small ";
+}    
+
+#home-main section{
+    text-align: center;
+}
+
+#home-main section p{
+    padding: 1rem;
+}
+#home-main h2{
+    text-align: center;
+}
+
+#nav-button{    
+    font-size: 2rem;    
+    background-color: #DE871D;
+    color: #F8F3DF;
+}
+
+#nav-button::before{
+    content: '='
+}
+
+#nav-button.showing::before{
+    content: 'X'
+}
+
+#nav-menu{
+    display: none;
+}
+
+#nav-menu.showing{
+    display: block;
+}
+
+#discover-main{
+    display: block;
+}
+
+#discover-images{
+    text-align: center;
+}
+
+#discover-images img{
+    border: 5px solid var(--hover-background-color);
+}
+
+#discover-demographics, #discover-message{
+    border: 1px solid black;    
+    padding: 1rem;
+    margin: 1rem 0;
+
+}

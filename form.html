@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Leon - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="This webpage is a portal page for the work of Elena Leon. It is focused on WDD 230 - Web Frontend Development. It will provide links to current and past assignments I complete throughout the semester." />
+    <meta name="author" content="Elena Leon"/>
+    <meta property="og:url" content="https://github.com/elenal63/wdd230"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Elena Leon - WDD 230 - Web Frontend Development" />
+    <meta property="og:description" content="This webpage is a portal page for the work of Elena Leon. It is focused on WDD 230 - Web Frontend Development. It will provide links to current and past assignments I complete throughout the semester." />
+    <meta property="og:image" content="https://elenal63.github.io/wdd230/images/profile.jpg"/>
+    <link rel="icon" href="images/favicon2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scritps/getdates.js" defer></script>
+    <script src="scripts/site_visits.js"defer></script>
+    <script src="scritps/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Image of Elena Leon">
+        <h1>Elena Leon</h1>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <a href="#">Home</a>
+        <a href="chamber/siteplan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.byui.edu/">BYU-Idaho</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/53?lang=eng&id=p3-p5#p3">Scripture</a>
+    </nav>
+    <main id="form-main">
+        <form>
+            <fieldset>
+                <p><span id="message"></span></p>
+                <label>Username: <input id="username" name="username" type="text" required></label>
+                <label>Password: <input id="password" name="password" type="password" required pattern="[\w]{8,}"></label>
+                <label>Confirm: <input id="confirm" name="confirm" type="password" required></label>
+                <label>Email: <input id="email" name="email" type="email" required pattern="[\w\.]+@byui\.edu$" placeholder="Your Email" title="Please enter a vaild email address"></label>
+                <label>Page Rating: <span id="currentrating">1</span> <input id="rating" name="rating" type="range" min="1" max="10" step="1" value="1" list="slidervalues"></label>
+                <datalist id="slidervalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <!-- do NOT use submit ever!! -->
+                <button>Sign Up</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id='currentyear'></span></p>
+        <p>Elena Leon</p>
+        <p>Last Modified: <span id='lastmodified'></span></p>
+    </footer>
+</body>
+</html>
