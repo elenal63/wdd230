@@ -1,181 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
 
-:root{
-    --text-color: #543034;
-    --background-color: #F8F3DF;
-    --hover-background-color: #DE871D;    
-    --hover-color: black;
+body {
+    height: 100vh;
+    max-width: 1440px;
+    font-family: "Bitter", serif;
 }
 
-body{
-    font-family: 'Bitter', serif;
-    background-color: #F8F3DF;
-    color: var(--text-color);
-    max-width: 1200px;
-    margin: 0 auto;
-}
+#dark-mode {
+    float: right;
+    top: 15px;
+    right: 100px;
+    border: none;
+    padding: 5px;
+  }
 
-button{
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
-
-header, footer, nav{
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    padding: 5px;
     background-color: #DE871D;
-    color: #F8F3DF;
+
 }
 
-main{
-    background-color: var(--background-color);
+header img {
+    display: block;
+    border-radius: 50%;
+    margin: 1rem;
+    width: 25%;
+    height: 100px
 }
 
-/** Header styles **/
-
-header{
+/* .nav-bar {
+    padding: 2rem;
+    grid-column: 1 / 4;
+    background-color: #DE871D;
     display: flex;
-    position: relative;
-    align-items: center;
-}
 
-#dark-mode{
-    position:absolute;
-    top: 1rem;
-    right: 2rem; 
-    background-color: var(--background-color);
-}
+} */
 
-header img{
-    flex: 1;
+#nav-menu {
+    grid-column: 3/4;
+    text-align: right;
 }
-
-header h1{
-    flex: 2;
-    text-align: center;    
-}
-
-footer{
-    margin: 0 auto;
-    text-align: center;
-    padding: 1rem;
-}
-/** Menu styles **/
-
-nav ul{
+  
+nav ul li {
     list-style: none;
-    padding-inline-start: 0px;
+    height: 100%;
+    width: 100px;
+    padding:1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: #B8E6F3;
+    transition: all .5s ease;
+}
+
+/* nav {
+    padding: 2rem;
+    grid-column: 1 / 4; */
+    /* display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  nav ul li a {
+    text-decoration: none;
+    color:black;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-}
-
-nav ul li{
-    flex: 1;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    background-color: var(--hover-background-color);
-    color: var(--hover-color);
-}
-
-nav ul li a{
-    display: block;    
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 1rem;
-    text-align: center;
-    
-}
-
-nav ul li a:hover{
-    background-color: var(--background-color);
-}
-
-/* main styles */
-#hero{
-    position: relative;
-}
-#hero img{
     width: 100%;
-}
-
-#hero button{
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    font-size: 1.5rem;
-    padding: .5rem;
-    border: 5px solid var(--hover-background-color);
-    border-radius: 10px;
-}
-
-#hero button:hover{
-    background-color: var(--hover-background-color)
-}
-
-
-#hero h2{
-    padding: 1rem;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: black;
-    color: white;
-    margin-block-start: 0em;
-}
-
-#hero h2::before{
-    content: "Small ";
-}    
-
-#home-main section{
     text-align: center;
-}
-
-#home-main section p{
-    padding: 1rem;
-}
-#home-main h2{
-    text-align: center;
-}
-
-#nav-button{    
-    font-size: 2rem;    
-    background-color: #DE871D;
-    color: #F8F3DF;
-}
-
-#nav-button::before{
-    content: '='
-}
-
-#nav-button.showing::before{
-    content: 'X'
-}
-
-#nav-menu{
-    display: none;
-}
-
-#nav-menu.showing{
-    display: block;
-}
-
-#discover-main{
-    display: block;
-}
-
-#discover-images{
-    text-align: center;
-}
-
-#discover-images img{
-    border: 5px solid var(--hover-background-color);
-}
-
-#discover-demographics, #discover-message{
-    border: 1px solid black;    
-    padding: 1rem;
-    margin: 1rem 0;
+    font-size: 1rem;
 
 }
+
+/* header h1 {
+    width: 100%;
+    margin-left: 250px;
+    grid-column: 2/3;
+} */
+
+nav ul {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    /* align-items: flex-end; */
+    /* display: none; */
+    margin-right: 20px;
+    
+  }
+
+  .home-section img {
+      width: 100%;
+  }
