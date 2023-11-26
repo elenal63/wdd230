@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stars Hollow Chamber of Commerce</title>
+    <meta name="description" content="This is a chamber of commerce site for the town Stars Hollow. It is focused on supporting Stars Hollow's local businesses and events. It will provide links to the directory of businesses, the discover page, and the join page." />
+    <meta name="author" content="Elena Leon"/>
+    <meta property="og:url" content="https://github.com/elenal63/wdd230"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Star Hollow Chamber of Commerce" />
+    <meta property="og:description" content="This is a chamber of commerce site for the town Stars Hollow. It is focused on supporting Stars Hollow's local businesses and events. It will provide links to the directory of businesses, the discover page, and the join page." />
+    <meta property="og:image" content="https://elenal63.github.io/wdd230/images/town.jpeg"/>
+    <link rel="icon" href="images/stars_hollow_sign.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/dark_mode.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <button id="dark-mode">DARK</button>
+    </div>
+    <div class="nav-bar">
+        <header>
+            <img class="logo" src="images/stars_hollow_sign.webp" alt="Stars Hollow Sign" height="160" width="160">        
+        </header>
+        <nav>
+            <button id="nav-button"></button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main id="join-main">
+        <section class="join">
+            <div>
+                <h2 id="sign-up">Sign Up for the Chamber</h2>
+                <form method="GET" action="thankyou.html">
+                    <label class="myinput">First Name(required*)<input id="fname" type="text" name="fname" required></label>
+                    <label class="myinput">Last Name(required*)<input type="text" name="lname" id="lname" required></label>
+                    <label class="myinput">Title/ Position<input type="text" name="title" id="title" pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label class="myinput">Email(required*)<input type="email" name="email" required placeholder="example@mymail.com"></label>
+                    <label class="myinput">Cell Phone(required*)<input type="tel" name="cellphone" required></label>
+                    <label class="myinput">Business Name(required*)<input type="text" name="bizname" required></label>
+                    <h3>Membership Level</h3>
+                    <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
+                    <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
+                    <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
+                    <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
+                    <label class="myinput">Business Description<textarea name="description" cols="40"
+                            rows="5"></textarea></label>
+                    <input id="timestamp" type="hidden" name="timestamp" value="">
+                    <button class="mysubmit">Join the Stars Hollow Fun!</button>
+                </form>
+            </div>
+            <div>
+                <h2 id="member-benefits">Membership Levels Benefits</h2>
+                <h3>NP Membership (Non-Profit Organizations)</h3>
+                <ul>
+                    <li>No annual fee</li>
+                    <li>Listing in the Stars Hollow directory</li>
+                    <li>Ability to post events on Town meeting calendar</li>
+                    <li>Access to Town committee networking events</li>
+                </ul>
+                <h3>Bronze Membership ($20/year)</h3>
+                <ul>
+                    <li>All NP level benefits</li>
+                    <li>Window decal identifying your SHCC membership</li>
+                    <li>Discounted admission for you and staff at all Town events</li>
+                    <li>One emphasized business listing in the annual SHCC directory</li>
+                </ul>
+
+                <h3>Silver Membership ($50/year)</h3>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Business logo on the SHCC website</li>
+                    <li>Feature piece for your business in the monthly Town Gazette (one time per year)</li>
+                    <li>First dibs on vendor spots at Town events like the Firelight Festival</li>
+                </ul>
+
+                <h3>Gold Membership ($100/year)</h3>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Prominent placement of logo & QR code in Miss Patty's studio</li>
+                    <li>Spotlight article written on your biz in Town Gazette (one time per year)</li>
+                    <li>5 free featured ads per year</li>
+                    <li>Prime real estate vendor placement at all Town events</li>
+                    <li>Package of 4 tickets to the Secretariat Fundraiser soirée</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <div>
+            <img class="footer-logo" src="images/stars_hollow_sign.webp" alt="Stars Hollow Logo" height="160" width="160">
+        </div>
+        <div class="footer-contact">
+            <p>Stars Hollow Chamber of Commerce</p>
+            <p>123 Main Street, Stars Hollow, CT 90650</p>
+            <p><a href="#">info@starshollowchamber.org</a></p>
+            <p>208-123-2626</p>
+        </div>
+        <hr>
+        <div class="footer-base">
+            <p>&copy;<span id="currentyear"></span> Elena Leon | Chamber Project WDD 230 | Last Modified: <span id="lastmodified"></span></p>
+        </div>        
+    </footer>
+</body>
+
+</html>

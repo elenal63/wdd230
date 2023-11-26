@@ -195,3 +195,104 @@ footer{
 #weather-icon{
     width: 20%;
 }
+
+.join{
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.join {
+    text-align: left;
+    justify-content: left;
+    color:#543034;
+}
+
+.join > div{
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px #0C6279 solid;
+    margin: 5rem 4rem;
+    border-radius:15px;
+    width: 90%;
+    min-width: 400px;
+}
+
+label.myinput{
+    display:block;
+    padding-top: 1rem;
+}
+
+label.myinput input, label.myinput textarea{
+    display:block;
+    font-size: 1.2rem;
+    padding: .5rem;
+    width: 20rem;
+    max-width: 20rem;
+}
+
+label.myradio{
+    display: block;
+    margin-right: .2rem;
+    font-size: 1.3rem;  
+    padding-top: .5rem;
+}
+
+label.myradio input{
+    margin-right: 1rem;
+}
+
+.mysubmit {
+    width: fit-content;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DE871D;
+    display: block;
+    color: #F8F3DF;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #543034;
+}
+
+.mysubmit:hover{
+    background-color: #B8E6F3;
+    color: #0C6279;
+    border: 2px solid #0C6279; 
+}
+
+label.myinput input:required{
+    border-color: #922;
+}
+
+input:valid{
+    background-color: rgb(200, 255, 200);
+}
+
+input:invalid{
+    background-color: rgb(255, 200, 200);
+}
+
+.join-confirm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+#thankyou-main h2{
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 1rem 0;
+}
+
+#sign-up, #member-benefits{
+    background-color: #0C6279;
+    color: #B8E6F3;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+}

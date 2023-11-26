@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stars Hollow Chamber of Commerce</title>
+    <meta name="description" content="This is a chamber of commerce site for the town Stars Hollow. It is focused on supporting Stars Hollow's local businesses and events. It will provide links to the directory of businesses, the discover page, and the join page." />
+    <meta name="author" content="Elena Leon"/>
+    <meta property="og:url" content="https://github.com/elenal63/wdd230"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Star Hollow Chamber of Commerce" />
+    <meta property="og:description" content="This is a chamber of commerce site for the town Stars Hollow. It is focused on supporting Stars Hollow's local businesses and events. It will provide links to the directory of businesses, the discover page, and the join page." />
+    <meta property="og:image" content="https://elenal63.github.io/wdd230/images/town.jpeg"/>
+    <link rel="icon" href="images/stars_hollow_sign.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/dark_mode.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <div>
+        <button id="dark-mode">DARK</button>
+    </div>
+    <div class="nav-bar">
+        <header>
+            <img class="logo" src="images/stars_hollow_sign.webp" alt="Stars Hollow Sign" height="160" width="160">        
+        </header>
+        <nav>
+            <button id="nav-button"></button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="thanks">
+            <h1>Thank you for joining the Stars Hollow Chamber of Commerce!</h1>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <div>
+            <img class="footer-logo" src="images/stars_hollow_sign.webp" alt="Stars Hollow Logo" height="160" width="160">
+        </div>
+        <div class="footer-contact">
+            <p>Stars Hollow Chamber of Commerce</p>
+            <p>123 Main Street, Stars Hollow, CT 90650</p>
+            <p><a href="#">info@starshollowchamber.org</a></p>
+            <p>208-123-2626</p>
+        </div>
+        <hr>
+        <div class="footer-base">
+            <p>&copy;<span id="currentyear"></span> Elena Leon | Chamber Project WDD 230 | Last Modified: <span id="lastmodified"></span></p>
+        </div>        
+    </footer>
+</body>
+</html>
