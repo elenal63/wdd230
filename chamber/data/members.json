@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name":"Luke's Diner",
+            "address":"84 Peach Street, Stars Hollow, CT 05926",
+            "phone": "(860)555-1024",
+            "websiteURL":"https://gilmoregirls.fandom.com/wiki/Luke%27s_Diner",
+            "imageURL":"images/lukes.webp",
+            "membershipLevel":"gold"
+        },
+
+        {
+            "name":"Kim's Antiques",
+            "address":"12 Plum Street, Stars Hollow, CT 05927",
+            "phone": "(860)555-2048",
+            "websiteURL":"https://gilmoregirls.fandom.com/wiki/Kim%27s_Antiques",
+            "imageURL":"images/kims.webp",
+            "membershipLevel":"silver"
+        },
+
+        {
+            "name":"Doose's Market",
+            "address":"44 Peach Street, Stars Hollow, CT 05926",
+            "phone": "(860)555-3092",
+            "websiteURL":"https://gilmoregirls.fandom.com/wiki/Doose%27s_Market",
+            "imageURL":"images/dooses.webp",
+            "membershipLevel":"gold"
+        },
+
+        {
+            "name":"Miss Patty's Dance Studio",
+            "address":"32 Peony Lane, Stars Hollow CT, 05926",
+            "phone": "(860)555-4088",
+            "websiteURL":"https://gilmoregirls.fandom.com/wiki/Miss_Patty%27s_School_of_Ballet",
+            "imageURL":"images/pattys.webp",
+            "membershipLevel":"silver"
+        },
+
+        {
+            "name":"Dragonfly Inn",
+            "address":"72 Plum Road, Stars Hollow CT, 05926",
+            "phone": "(860) 555-5032",
+            "websiteURL":"https://gilmoregirls.fandom.com/wiki/Dragonfly_Inn",
+            "imageURL":"images/dragonfly.webp",
+            "membershipLevel":"silver"
+        },
+
+        {
+            "name":"Al's Pancake World",
+            "address":"22 Cherry Lane, Stars Hollow, CT 05926",
+            "phone": "(860)555-6022",
+            "websiteURL":"https://gilmoregirls.fandom.com/wiki/Al%27s_Pancake_World",
+            "imageURL":"images/als.webp",
+            "membershipLevel":"bronze"
+        },
+
+        {
+            "name":"Sophie's Music Shop",
+            "address":"15 Guitar Street, Stars Hollow, CT 05926",
+            "phone": "(860)555-6088",
+            "websiteURL":"https://gilmoregirls.fandom.com/wiki/Sophie_Bloom",
+            "imageURL":"images/sophies.webp",
+            "membershipLevel":"bronze"
+        }
+
+    ]
+}

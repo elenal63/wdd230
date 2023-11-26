@@ -296,3 +296,106 @@ input:invalid{
     justify-content: center;
     text-align: center;
 }
+
+.directory-main{
+    width: 100%;
+}
+
+#directory-selector{
+    width: 100%;
+    text-align: center;
+}
+
+#directory-selector button{
+    padding: 1rem;
+    margin: .5rem;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: #DE871D;
+    color: #F8F3DF;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #543034;
+}
+
+#directory-selector button.active{
+    background-color: #B8E6F3;
+    color: #0C6279;
+    border: 2px solid #0C6279;
+}
+
+#directory-selector button:hover {
+    background-color: #B8E6F3;
+    color: #0C6279;
+    border: 2px solid #0C6279;
+}
+
+.directory-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+}
+
+.directory-cards section{
+    text-align: center;    
+    border-radius: 5px;
+    border: 2px solid #0C6279;    
+    width: 300px;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.directory-cards .card-button{
+    text-decoration: none;
+    color: #B8E6F3;
+    background-color: #0C6279;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.directory-list{    
+    display: grid;    
+    justify-items: center;   
+    padding: 1rem;    
+}
+
+.directory-list section img{
+    display: none;
+}
+
+.directory-list section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 70%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.directory-list .card-button{
+    text-decoration: none;
+    background-color: #B8E6F3;
+    color: #0C6279;
+    border: 2px solid #B8E6F3;  
+    padding: .5rem;
+    border-radius: 5px; 
+}
+
+.card-button:hover {
+    background-color: #DE871D;
+    color: #F8F3DF;
+    border: 2px solid #543034;
+}
+
+.directory-list section:nth-child(odd) {
+    background-color: #F8F3DF;
+    border-radius: 5px; 
+}
+
+.directory-list section:nth-child(even) {
+    background-color: #0C6279;
+    color:#B8E6F3;
+    border-radius: 5px; 
+}
+
+ 
