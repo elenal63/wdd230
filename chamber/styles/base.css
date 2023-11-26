@@ -398,4 +398,27 @@ input:invalid{
     border-radius: 5px; 
 }
 
- 
+#discover-main{
+    display: block;
+}
+
+#discover-images{
+    text-align: center;
+}
+
+#discover-demographics, #discover-message, #discover-events, #discover-attractions{
+    border: 2px solid #543034;
+    border-radius: 5px;   
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+#discover-main h2 {
+    background-color: #0C6279;
+    color: #B8E6F3;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: left;
+}

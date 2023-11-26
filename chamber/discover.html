@@ -17,28 +17,102 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/dark_mode.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
 </head>
 <body>
-    <header>
-        <p><img src="images/stars_hollow_sign.webp" alt="Stars Hollow Sign" height="160" width="160"></p>
-        <h1>Stars Hollow Chamber of Commerce</h1>        
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-        </ul>
-    </nav>
-    <div><button id='dark-mode'>DARK</button></div>
-    <main id="home-main">
-        
+    <div>
+        <button id="dark-mode">DARK</button>
+    </div>
+    <div class="nav-bar">
+        <header>
+            <img class="logo" src="images/stars_hollow_sign.webp" alt="Stars Hollow Sign" height="160" width="160">        
+        </header>
+        <nav>
+            <button id="nav-button"></button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main id="discover-main">
+        <div id="discover-sidebar">
+            <section id="discover-message">
+                <h3></h3>
+            </section>
+            <section id="discover-demographics">
+                <h2>Town Demographics</h2>
+                <li>Population: 9,973</li>
+                <li>Median Age: 36 years old</li> 
+                <li>Median Home Price: $275,000</li> 
+                <li>Town History Overview</li> 
+                <li>Major Employers: Luke's Diner, Dragonfly Inn, Miss Patty's Dance Studio</li>               
+            </section>
+            <section id="discover-events">
+                <h2>Upcoming Town Events</h2>
+                <li>Winter Carnival & Skating Festival (January 3rd)</li>
+                <li>Firelight Festival (December 16th)</li>
+                <li>Hollow 150th Anniversary Parade & Picnic (February 4th)</li>
+                <li>Bid-a-Basket Fundraiser (November 25th)</li>
+            </section>
+            <section id="discover-attractions">
+                <h2>Town Attractions</h2>
+                <h4>The Gazebo:</h4>
+                <p>This stately white gazebo sits right in the middle of our quaint town square. Completed in 1914, it hosts everything from summer evening concerts to the annual dance marathon. Visitors love to snap photos in front of the landmark gazebo with its charming holiday decorations.</p>
+                <h4>Peach Orchard:</h4>
+                <p>Take a stroll through acres of lush peach trees at one of Connecticut’s beloved orchards, owned by the Cheshire family for generations. Enjoy peach picking in summer and the annual harvest festival in the fall. Their farm stand sells fruit pies, fresh produce, gifts and more!</p>
+                <h4>Kim’s Antiques:</h4>
+                <p>Treasure hunt for rare antique furnishings, porcelain pieces and eclectic décor at Kim’s Antiques shop on Plum Street. Owners Mrs. Kim and her daughter Lane lovingly restore estate sale finds into shabby chic masterpieces to sell in their quaint store.</p>
+                <h4>Stars Hollow Books:</h4>
+                <p>TBibliophiles adore our local, independent bookshop run by Rory Gilmore. Browse classic lit, bestsellers, rare first editions and more. There’s always something new on Rory’s staff picks and kids sections. Enjoy cozy readings spaces in this dream book nook.</p>
+                <h4>Independence Square:</h4>
+                <p>See our town history come alive! This outdoor museum features the original 1779 homestead, blacksmith’s forge, schoolhouse, rectory barn and more preserved buildings central to Stars Hollow’s founding years. Fun activities and tours offered daily.</p>
+                <h4>Dragonfly Inn:</h4>
+                <p>The jewel of Stars Hollow – the majestic Dragonfly Inn charms guests with its Tudor-style architecture, expansive grounds and whimsical decor. Rooms pamper guests with plush, four poster beds and luxe amenities. Its world-class farm-to-table dining makes it the perfect New England country retreat.</p>
+            </section>
+
+        </div>
+        <div id="discover-images">
+            <picture>
+                <img src="images/mom-daughter.webp" alt="lorelei and rory" loading="lazy" height="400">
+            </picture>
+            <h3>Lorelei and Rory strolling through town</h3>
+            <picture>
+                <img src="images/cast.webp" alt="cast" loading="lazy" height="399">
+            </picture>
+            <h3>Some of our exemplar townsfolke</h3>
+            <picture>
+                <img src="images/sleigh.jpg" alt="sleigh ride" loading="lazy" height="398">
+            </picture>
+            <h3>Sleigh Ride at the winter festival</h3>
+            <picture>
+                <img src="images/book.jpg" alt="two people talking" loading="lazy" height="397">
+            </picture>
+            <h3>Rory and Jess on the way to the book exchange</h3>
+            <picture>
+                <img src="images/fashion.jpg" alt="fashion show" loading="lazy" height="396">
+            </picture>
+            <h3>Charity Fashion Show at the Dragonfly Inn</h3>
+            <picture>
+                <img src="images/fall.jpg" alt="fall festival" loading="lazy" height="395">
+            </picture>
+            <h3>Townsfolke enjoying the fall festival</h3>
+            <picture>
+                <img src="images/coffee.jpg" alt="coffee shop" loading="lazy" height="394">
+            </picture>
+            <h3>Lorelei and Rory enjoying some coffee at Luke's</h3>
+        </div>
     </main>
     <footer>
         <hr>
-        <div class="footer-logo">
-            <p><img src="images/stars_hollow_sign.webp" alt="Stars Hollow Logo" height="160" width="160"></p>
+        <div>
+            <img class="footer-logo" src="images/stars_hollow_sign.webp" alt="Stars Hollow Logo" height="160" width="160">
         </div>
         <div class="footer-contact">
             <p>Stars Hollow Chamber of Commerce</p>
