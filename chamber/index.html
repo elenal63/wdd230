@@ -17,12 +17,18 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/dark_mode.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
+    <div>
+        <button id="dark-mode">DARK</button>
+    </div>
     <div class="nav-bar">
         <header>
-            <img src="images/stars_hollow_sign.webp" alt="Stars Hollow Sign" height="160" width="160">
-            <!-- <h1>Stars Hollow Chamber of Commerce</h1>         -->
+            <img class="logo" src="images/stars_hollow_sign.webp" alt="Stars Hollow Sign" height="160" width="160">        
         </header>
         <nav>
             <button id="nav-button"></button>
@@ -34,51 +40,47 @@
             </ul>
         </nav>
     </div>
-    <div><button id="dark-mode">DARK</button></div>
     <main id="home-main">
         <section id="hero" class="home-section">
-            <img src="images/town.jpeg" alt="town">
-            <button>Call to Action</button>
+            <h1>Stars Hollow Chamber of Commerce</h1>
+            <button>Join our small town fun!</button>
+        </section>
+        <section id="hero-pic" class="home-section">
+            <img src="images/town.webp" alt="town">
         </section>
         <section id="current-events" class="home-section">
             <h2>Current Events</h2>
-            <img src="https://placehold.co/400x300" alt="events placeholder">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sequi eos, accusantium praesentium
-                officia alias dolores, consectetur, quibusdam corrupti ratione et ipsam maiores vitae nobis repellat
-                laboriosam quas saepe ut? Tenetur incidunt beatae reprehenderit, quae laborum voluptatibus natus
-                mollitia hic, itaque a autem earum libero unde veritatis quidem quia possimus.</p>
+            <img src="images/dragonfly.webp" alt="dragonfly inn">
+            <p>Come to the grand opening of The Dragonfly Inn! The newly restored inn promises luxurious accommodations filled with character and comfort. At the Dragonfly Inn, no detail has been overlooked and every guest is treated like family. Executive Chef Sookie St. James has crafted a mouthwatering menu using only the freshest, seasonal ingredients. From tasty breakfasts to exquisite dinners, the Dragonfly Inn's kitchen will delight your tastebuds with each and every meal. We eagerly welcome you to see what the Dragonfly Inn has to offer - a lovingly restored inn where guests can relax, reconnect and recharge. Don't miss this exciting new addition to the Stars Hollow community!</p>
         </section>
         <section id="weather" class="home-section">
             <h2>Weather</h2>
-            <img src="https://placehold.co/400x300" alt="weather placeholder">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum quam
-                rem deserunt placeat repellendus.</p>
+            <p><img id="weather-icon" src="images/snow.png" alt="weather icon"></p>
+            <p id="weather-desc">Snow</p>
+            <p id="weather-temp">30&deg;F | 10 mph winds</p>
         </section>
         <div id="spotlights" class="home-section">
             <section id="spotlight-1" class="spotlight-card">
-                <h3>Spotlight 1</h3>
-                <img src="https://placehold.co/300x240" alt="spotlight 1 placeholder">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
-                    quam rem deserunt placeat repellendus.</p>
+                <h3>Hay Bale Maze</h3>
+                <img src="images/maze.webp" alt="maze">
+                <p>Get lost in the fun at the annual Stars Hollow Hay Bale Maze! Bring your family and friends to the Hay Bale Maze for wholesome, autumnal fun! Admission is just $5 per person. Dress warmly and come ready to laugh and make memories. We can’t wait to see you there!</p>
             </section>
             <section id="spotlight-2" class="spotlight-card">
-                <h3>Spotlight 2</h3>
-                <img src="https://placehold.co/300x240" alt="spotlight 2 placeholder">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
-                    quam rem deserunt placeat repellendus.</p>
+                <h3>Knit-a-Thon</h3>
+                <img src="images/knit-a-thon.webp" alt="knit-a-thon">
+                <p>Get those knitting needles ready for the annual Stars Hollow Knit-a-Thon! Bring your own projects to work on, or stop by to purchase donated yarn and needles with proceeds benefiting the Stars Hollow Wildlife Protection Society. Let’s stitch together to spread warmth and give back! Admission is free and all knitting levels are encouraged to participate.</p>
             </section>
             <section id="spotlight-3" class="spotlight-card">
-                <h3>Spotlight 3</h3>
-                <img src="https://placehold.co/300x240" alt="spotlight 3 placeholder">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
-                    quam rem deserunt placeat repellendus.</p>
+                <h3>24 Hour Dance Marathon</h3>
+                <img src="images/dance.webp" alt="dance marathon">
+                <p>Grab your dancing shoes and get ready to kick up your heels at Stars Hollow's 24 Hour Dance Marathon! This year's marathon aims to raise money for the Stars Hollow Minority Small Business Alliance, helping minority, women and immigrant-owned local businesses right here in our community. Dancers collect pledges from friends and family to dance for the full 24 hours, competing in dance contests and speed rounds of popular genres from waltz to salsa.</p>
             </section>
         </div>
     </main>
     <footer>
         <hr>
-        <div class="footer-logo">
-            <p><img src="images/stars_hollow_sign.webp" alt="Stars Hollow Logo" height="160" width="160"></p>
+        <div>
+            <img class="footer-logo" src="images/stars_hollow_sign.webp" alt="Stars Hollow Logo" height="160" width="160">
         </div>
         <div class="footer-contact">
             <p>Stars Hollow Chamber of Commerce</p>

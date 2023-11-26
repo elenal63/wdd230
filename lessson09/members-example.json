@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone": "208-123-2222",
+            "websiteURL":"https://www.rexburd.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"gold"
+        },
+
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone": "208-123-2222",
+            "websiteURL":"https://www.rexburd.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"gold"
+        },
+
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone": "208-123-2222",
+            "websiteURL":"https://www.rexburd.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"gold"
+        },
+
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone": "208-123-2222",
+            "websiteURL":"https://www.rexburd.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"gold"
+        },
+
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone": "208-123-2222",
+            "websiteURL":"https://www.rexburd.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"gold"
+        },
+
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone": "208-123-2222",
+            "websiteURL":"https://www.rexburd.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"gold"
+        },
+
+        {
+            "name":"Example Name",
+            "address":"123 Main Street, Rexburg, ID 83440",
+            "phone": "208-123-2222",
+            "websiteURL":"https://www.rexburd.org",
+            "imageURL":"images/example.jpg",
+            "membershipLevel":"gold"
+        }
+
+    ]
+}
